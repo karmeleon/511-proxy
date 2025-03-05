@@ -1,0 +1,32 @@
+{
+    "name": "511-proxy",
+    "version": "1.0.0",
+    "description": "Proxies requests to 511.org to filter data down to a reasonable size.",
+    "main": "dist/index.js",
+    "type": "module",
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "dev": "nodemon"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/karmeleon/511-proxy.git"
+    },
+    "author": "Shawn Walton",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/karmeleon/511-proxy/issues"
+    },
+    "homepage": "https://github.com/karmeleon/511-proxy#readme",
+    "dependencies": {
+        "@types/express": "^5.0.0",
+        "@types/node": "^22.13.9",
+        "express": "^4.21.2",
+        "typescript": "^5.8.2"
+    },
+    "devDependencies": {
+        "concurrently": "^9.1.2",
+        "nodemon": "^3.1.9"
+    }
+}
