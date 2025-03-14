@@ -8,7 +8,7 @@
 
 ### Consuming
 
-This app is running live on my personal server. Simply obtain a 511.org API key and hit `511-proxy.wn.zone`:
+This app is running live on my personal server. Simply obtain a 511.org API key and hit `511proxy.wn.zone`:
 
 ```
 https://511proxy.wn.zone/transit/StopMonitoring?api_key=your-api-key&agency=SF&stopcodes=12345|67890&line_ids=5R|N|38&directions=IB|OB|N|S|W|E
