@@ -65,8 +65,7 @@ app.get("/transit/StopMonitoring", async (req, res) => {
     res.setHeaders(responseHeadersToForward);
 
     if (!apiResponse.ok) {
-        // TODO: not-ok responses are probably not json
-        res.status(apiResponse.status).json(await apiResponse.json());
+        res.status(apiResponse.status).send(await apiResponse.text());
         return;
     }
 
