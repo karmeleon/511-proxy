@@ -23,7 +23,6 @@ const RESPONSE_HEADERS_TO_FORWARD = new Set([
 // line_ids: remove, split by "|", then use for filtering result
 // directions: remove, split by "|", then use for filtering result
 app.get("/transit/StopMonitoring", async (req, res) => {
-    console.log(req.url);
     const proxiedQueryString = new URLSearchParams(
         req.query as Record<string, string>,
     );
